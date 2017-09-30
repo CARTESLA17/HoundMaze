@@ -1,0 +1,13 @@
+package co.rifagap;
+
+public class PiezaDeLaberinto {
+
+	public PiezaDeLaberinto() {
+		super();
+	}
+	
+	
+	
+	
+
+}

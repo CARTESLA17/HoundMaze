@@ -1,0 +1,31 @@
+package co.rifagap;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		File archivo = new File("./resources/Hound Maze(tsv).txt");
+		ArrayList<String> lineasDelArchivo = new ArrayList<>();
+		if( archivo.exists() && archivo.isFile() && archivo.canRead()){
+			try {
+				BufferedReader bRDelArchivo = new BufferedReader(new FileReader(archivo));
+				cargarLineasDelArchivoEnArray(lineasDelArchivo, bRDelArchivo);
+			} catch (FileNotFoundException e) {
+				System.out.println("Error en la lectura del archivo!");
+			}
+			
+		}
+		
+
+	}
+	
+	public static void cargarLineasDelArchivoEnArray(ArrayList<String> lineasDelArchivo, BufferedReader bRDelArchivo){
+		
+	}
+
+}

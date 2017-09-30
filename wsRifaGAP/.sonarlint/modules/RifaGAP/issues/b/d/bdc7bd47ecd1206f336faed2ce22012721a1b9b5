@@ -1,0 +1,23 @@
+
+;squid:S2095"Close this "FileReader".(¯éÃşşÿÿÿÿ8Ñ¤§®ì+
+]
+squid:S106";Replace this usage of System.out or System.err by a logger.(¨“®ƒıÿÿÿÿ8ş¹È®ì+
+isquid:S1226@"FIntroduce a new variable instead of reusing the parameter "laberinto".(¼¼êìıÿÿÿÿ8¼Òò°ì+
+\squid:S1854("9Remove this useless assignment to local variable "linea".(¤Áìòÿÿÿÿÿ8ş¹È®ì+
+]
+squid:S106 ";Replace this usage of System.out or System.err by a logger.(‘ªÓÿÿÿÿÿ8ÉËÀ±ì+
+‹ squid:ForLoopCounterChangedCheckG"XRefactor the code in order to not assign to this loop counter from within the loop body.(¯ÀÚè8§ö±ì+
+k
+squid:S134"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(Æ¼´ú8™·™±ì+
+bsquid:S2147"DCombine this catch with the one at line 29, which has the same body.(ï­£Ä8ş¹È®ì+
+Qsquid:S1118
+":Add a private constructor to hide the implicit public one.(àªÅö
+™squid:S13193"{The type of the "lineasDelArchivo" object should be an interface such as "List" rather than the implementation "ArrayList".(«À³8Ã–®®ì+
+]
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8™·™±ì+
+‹ squid:ForLoopCounterChangedCheck:"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ8¼Òò°ì+
+Csquid:S1166"%Either log or rethrow this exception.(‹±ÃÆ8Ñ¤§®ì+
+]
+squid:S106";Replace this usage of System.out or System.err by a logger.(‘ªÓÿÿÿÿÿ8Óó¨±ì+
+˜squid:S1319'"{The type of the "lineasDelArchivo" object should be an interface such as "List" rather than the implementation "ArrayList".(ÜÌÓD8Ã€â®ì+
+Csquid:S1166"%Either log or rethrow this exception.(ï­£Ä8ş¹È®ì+

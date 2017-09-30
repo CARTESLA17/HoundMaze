@@ -1,0 +1,19 @@
+package co.rifagap;
+
+public class PiezaDeLaberinto {
+	
+	private char representacion='-';
+
+	public PiezaDeLaberinto() {
+		super();
+	}
+
+	public char getRepresentacion() {
+		return representacion;
+	}
+
+	public void setRepresentacion(char representacion) {
+		this.representacion = representacion;
+	}	
+
+}

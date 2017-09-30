@@ -1,0 +1,26 @@
+package co.rifagap;
+
+public class PiezaDeLaberinto {
+	
+	private char representacion;
+	private int x;
+	private int y;
+	private boolean piezaHabilitada=true;
+	private boolean arriba=true;
+	private boolean abajo=true;
+	private boolean derecha=true;
+	private boolean izquierda=true;	
+
+	public PiezaDeLaberinto() {
+		super();
+	}
+
+	public char getRepresentacion() {
+		return representacion;
+	}
+
+	public void setRepresentacion(char representacion) {
+		this.representacion = representacion;
+	}	
+
+}

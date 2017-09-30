@@ -1,0 +1,67 @@
+package co.rifagap;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		File archivo = new File("./resources/Hound Maze(tsv).txt");
+		ArrayList<String> lineasDelArchivo = new ArrayList<>();
+		char [][] laberinto = null;
+		if( archivo.exists() && archivo.isFile() && archivo.canRead()){
+			try {
+				BufferedReader bRDelArchivo = new BufferedReader(new FileReader(archivo));
+				cargarLineasDelArchivoEnArray(lineasDelArchivo, bRDelArchivo);
+				bRDelArchivo.close();
+				laberinto = armarLaberinto(laberinto, lineasDelArchivo);
+				for( int y=0;y<laberinto[0].length;y++){
+					for( int x=0; x<laberinto.length;x++){
+						System.out.println(laberinto[x][y]);
+					}
+				}
+				
+			} catch (FileNotFoundException e) {
+				System.out.println("Error en la lectura del archivo!");
+			} catch (IOException e) {
+				System.out.println("Error en la lectura del archivo!");
+			} 			
+		}
+		
+
+	}
+	
+	public static void cargarLineasDelArchivoEnArray(ArrayList<String> lineasDelArchivo, BufferedReader bRDelArchivo) throws IOException{
+		String linea="";
+		int contador=1;
+		while( (linea=bRDelArchivo.readLine()) != null ){
+			if( contador>5 ){
+				lineasDelArchivo.add(linea);	
+			}else{
+				contador++;
+			}	
+		}		
+	}
+	
+	public static char [][] armarLaberinto(char [][] laberinto, ArrayList<String> lineasDelArchivo){
+		int x = 0;
+		int y = lineasDelArchivo.size();
+		if( !lineasDelArchivo.isEmpty() ){
+			String lineaUno=lineasDelArchivo.get(0);
+			for(int i=5; i<lineaUno.length(); i++){
+				if( lineaUno.charAt(i)=='F'){
+					i+=2;
+				}
+				x++;
+			}
+			x++;
+		}
+		laberinto = new char [x][y];
+		return laberinto;
+	}
+
+}
